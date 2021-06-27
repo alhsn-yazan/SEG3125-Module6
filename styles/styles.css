@@ -19,7 +19,7 @@ p{
 .navbar {
   overflow: hidden;
   background-color: #4169E1;
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
 }
