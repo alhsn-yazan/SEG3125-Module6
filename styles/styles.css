@@ -69,14 +69,12 @@ p{
     padding: 6px;
 }
 
-.icon-container {
-  margin-bottom: 20px;
-  padding: 7px 0;
-  font-size: 24px;
-}
-
 .footer {
   padding: 10px;
   text-align: left;
+  font-size: 10px;
   background: #B0E0E6;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #4169E1;
 }
