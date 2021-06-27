@@ -41,6 +41,7 @@ p{
 
 .powderbluebox {
     padding: 6px;
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     background-color: #B0E0E6;
 }
