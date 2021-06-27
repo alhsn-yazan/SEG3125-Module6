@@ -1,5 +1,13 @@
-td{
-    font-size: 20px;
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  font-size: 20px;
+  border: 1px solid black;
+  text-align: left;
+  padding: 7px;
 }
 p{
     font-size: 20px;
