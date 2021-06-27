@@ -21,7 +21,6 @@ p{
   background-color: #4169E1;
   position: sticky;
   top: 0;
-  width: 100%;
 }
 
 .navbar a {
@@ -31,7 +30,6 @@ p{
   text-align: center;
   padding: 10px 16px;
   text-decoration: none;
-  font-size: 18px;
 }
 
 .navbar a:hover {
