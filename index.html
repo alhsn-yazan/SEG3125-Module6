@@ -156,22 +156,22 @@ Many websites will use what is called CSS grid layouts, where you will have a he
             <input type="time" id="appt" name="appt"><br><br>
             
             <label for="fname">Your first name:</label><br>
-            <input type="text" id="fname" name="fname" value="John"><br>
+            <input type="text" id="fname" name="fname"><br>
             <label for="lname">Your last name:</label><br>
-            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="text" id="lname" name="lname"><br><br>
             
             <label for="phone">Enter phone number:</label><br>
             <input type="tel" id="phone" name="phone" placeholder="123-456-7899" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
             
             <h3><img src="images/payment.png" width="35" height="35"> Payment</h3>
             Accepted Cards<br>
-            <img src="images/cc.png" width="150" height="30"><br>
+            <img src="images/cc.png" width="200" height="25"><br>
            
             <label for="ccn">Credit Card Number:</label><br>
             <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx"><br><br>
             <!-- Code snippet from https://stackoverflow.com/questions/48534229/what-is-the-correct-input-type-for-credit-card-numbers -->
 
-            <input type="submit" value="Submit & Pay">
+            <input class="btn" type="submit" value="Submit & Pay">
             
          </form>
     </div>  
