@@ -40,6 +40,7 @@ p{
 }
 
 .powderbluebox {
-    border: p-3 my-3;
+    padding: 6px;
+    margin: 20px;
     background-color: #B0E0E6;
 }
