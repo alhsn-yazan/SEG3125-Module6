@@ -78,7 +78,7 @@ Many websites will use what is called CSS grid layouts, where you will have a he
         <div class="card" style="width: 18rem;">
             <img src="images/doctor2.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <p class="card-text"><b>PHANG HOONG</b>, Clinic Manager & Physiotherapist with 10 years of experience. Greatly experienced in working with young patients.</p>
+                <p class="card-text"><b>PHANG HOONG</b>, Manager & Physiotherapist with 10 years of experience. Greatly experienced in working with young patients.</p>
             </div>
         </div>
         <div class="card" style="width: 18rem;">
@@ -126,43 +126,61 @@ Many websites will use what is called CSS grid layouts, where you will have a he
     -->
 
     <div id="appointment"></div>
-    <button class="btn btn-primary btn-block" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-        Click here to book an appointment!
-    </button>
-
-    <div class="collapse" id="collapseExample">
-        <div class="card card-body">
-            <form action="/action_page.php">
-            <label for="appointment">Please select appointment date:</label>
-            <input type="date" id="appointment" name="appointment"><br><br>
-            <label for="appt">Please enter appointment time:</label>
-            <input type="time" id="appt" name="appt"><br><br>
-            Please enter your contact info.<br>
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name"><br><br>
-            <label for="phone">Phone number:</label>
-            <input type="text" id="phone" name="phone"><br><br>
-            Please select the services you would like to book an appointment for:<br>
+    <div class="powderbluebox">
+        <h2 class=""><img src="images/iconcalendar.png" width="50" height="50"><b> Appointment Booking & Payment:</b></h2>
+        
+        <form action="/action_page.php">
+            Select preffered expert/professional:<br>
+            <input type="radio" id="john" name="expert" value="JOHN WHALEY">
+            <label for="john">JOHN WHALEY</label><br>
+            <input type="radio" id="phang" name="expert" value="PHANG HOONG">
+            <label for="phang">PHANG HOONG</label><br>
+            <input type="radio" id="sarah" name="expert" value="SARAH RAGUSEO">
+            <label for="sarah">SARAH RAGUSEO</label><br><br>
+            
+            Select the services you would like to book an appointment for:<br>
             <input type="checkbox" id="service1" name="service1" value="GeneralCheckup">
             <label for="service1"> General Checkup</label><br>
             <input type="checkbox" id="service2" name="service2" value="ClinicalExerciseSessions">
             <label for="service2"> Clinical Exercise Sessions</label><br>
-            <input type="checkbox" id="service3" name="service3" value="Hydrotherapy">
-            <label for="service3"> Hydrotherapy</label><br>
-            <input type="checkbox" id="service4" name="service4" value="Podiatry">
-            <label for="service4"> Podiatry</label><br>
-            <input type="checkbox" id="service5" name="service5" value="Hand Therapy">
-            <label for="service5"> Hand Therapy</label><br>
-            <input type="checkbox" id="service6" name="service6" value="MusculoskeletalTherapy">
-            <label for="service6"> Musculoskeletal Therapy</label><br><br>
-            <input type="submit" value="Submit">
-            </form>
+            <input type="checkbox" id="service3" name="service3" value="Podiatry">
+            <label for="service3"> Podiatry</label><br>
+            <input type="checkbox" id="service4" name="service4" value="MusculoskeletalTherapy">
+            <label for="service4"> Musculoskeletal Therapy</label><br>
+            <input type="checkbox" id="service5" name="service5" value="Hydrotherapy">
+            <label for="service5"> Hydrotherapy</label><br><br>
             
+            <label for="appointment">Select appointment date:</label>
+            <input type="date" id="appointment" name="appointment"><br><br>
+            <label for="appt">Enter appointment time:</label>
+            <input type="time" id="appt" name="appt"><br><br>
             
-        </div>
-    </div>
-    
-    <br>
+            <label for="fname">Your first name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Your last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            
+            <label for="phone">Enter phone number:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="123-456-7899" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+            
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            
+            <label for="ccn">Credit Card Number:</label><br>
+            <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx"><br><br>
+            <!-- Code snippet from https://stackoverflow.com/questions/48534229/what-is-the-correct-input-type-for-credit-card-numbers -->
+
+            <input type="submit" value="Submit & Pay">
+            
+         </form>
+    </div>  
+         
     <br>
     <br>
     <br>
