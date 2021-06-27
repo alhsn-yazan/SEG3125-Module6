@@ -49,5 +49,11 @@ p{
 }
 
 .card-body {
-    background-color: #4169E1;
+    background-color: #B0E0E6;
+}
+
+.card {
+    border-color: #4169E1;
+    display: flex;
+    padding: 6px;
 }
