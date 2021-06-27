@@ -47,3 +47,7 @@ p{
     margin-left: 0px;
     background-color: #B0E0E6;
 }
+
+.card-body {
+    background-color: #4169E1;
+}
