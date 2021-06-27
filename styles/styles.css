@@ -8,3 +8,33 @@ p{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.header {
+  padding: 15px;
+  text-align: center;
+  background: #B0E0E6;
+  color: black;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #4169E1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  background: #B0E0E6;
+  color: black;
+}
