@@ -1,0 +1,131 @@
+<!doctype html>
+<!-- Here is a link to the code the documents this code is based on
+https://getbootstrap.com/docs/5.0/getting-started/introduction/
+This will help you get started with your code!
+-->
+
+<!-- I used the given source code from https://github.com/RyanMatte/Website/tree/master and tutorials from https://www.w3schools.com to code this website -->
+
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    <title>Back in Motion</title>
+</head>
+<body>
+<!--
+I store all of the page information in a container,
+Many websites will use what is called CSS grid layouts, where you will have a header, body, footer and both sides used for ads or other information
+-->
+<div class = "container-lg">
+
+    <!--
+    Most websites now feature what is called a NavBar.
+    The example I give is quite simple with a logo and some text, but you can use it for many navigational patterns
+    https://getbootstrap.com/docs/5.0/components/navbar/
+    -->
+
+    <nav class="navbar bg-primary text-white p-3 my-3 ">
+        <h1 style="text-align:center"><img src="images/company_logo.png" width="150" height="150"> Back In Motion</h1>
+    </nav>
+
+    <div class=" p-3 my-3 border bg-info">
+        <h2 class="">Welcome to Back In Motion! Ottawa's best physiotherapy clinic.</h2>
+        <p class="p-4 my-3" style="font-size: 20px">We are located in the south of Ottawa. Specifically at 420 Prince of Wales Drive, Nepean, ON.</p>
+        <p style="font-size: 20px; padding-left: 1.5rem">Don't hesitate, your health is important to us. Check our services below and book an appointment soon.</p>
+    </div>
+
+
+    <!-- Cards are quite useful when building a website. They are a useful way to organize information.
+    They can be organized using a CSS grid or other layout options.
+    https://getbootstrap.com/docs/5.0/components/card/
+    -->
+
+    <p class="bg-info text-black" style="font-size: 25px">Meet our experts!</p>
+    <div class="row justify-content-around">
+        <div class="card" style="width: 18rem;">
+            <img src="images/doctor1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">JOHN WHALEY, our Executive Director & Physiotherapist with 15 years of experience with stellar reviews.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/doctor2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">PHANG HOONG, our Clinic Manager & Physiotherapist with 10 years of experience. Greatly experienced in working with children patients.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/doctor3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">SARAH RAGUSEO, our excellent Physiotherapist with 8 years of experience. Greatly experienced in working with elderly patients.</p>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class=" p-3 my-3 border bg-info">
+        <h2 class="">Services & Price Estimates:</h2>
+        <p style="font-size: 20px; padding-left: 1.5rem">1. General Checkup ($100)      2. Clinical Exercise Sessions ($150)</p>
+        <p style="font-size: 20px; padding-left: 1.5rem">3. Hydrotherapy ($175)         4. Podiatry ($125)</p>
+        <p style="font-size: 20px; padding-left: 1.5rem">5. Hand Therapy ($125)         6. Musculoskeletal Therapy ($170)</p>
+    </div>
+    
+    <!--
+    We can also use buttons to expand some hidden options
+    https://getbootstrap.com/docs/5.0/components/collapse/
+    -->
+
+    <button class="btn btn-primary btn-block" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Click here to book an appointment!
+    </button>
+
+    <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+            <form action="/action_page.php">
+            <label for="appointment">Please select appointment date:</label>
+            <input type="date" id="appointment" name="appointment"><br><br>
+            <label for="appt">Please enter appointment time:</label>
+            <input type="time" id="appt" name="appt"><br><br>
+            Please enter your contact info.<br>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="phone">Phone number:</label>
+            <input type="text" id="phone" name="phone"><br><br>
+            Please select the services you would like to book an appointment for:<br>
+            <input type="checkbox" id="service1" name="service1" value="GeneralCheckup">
+            <label for="service1"> General Checkup</label><br>
+            <input type="checkbox" id="service2" name="service2" value="ClinicalExerciseSessions">
+            <label for="service2"> Clinical Exercise Sessions</label><br>
+            <input type="checkbox" id="service3" name="service3" value="Hydrotherapy">
+            <label for="service3"> Hydrotherapy</label><br>
+            <input type="checkbox" id="service4" name="service4" value="Podiatry">
+            <label for="service4"> Podiatry</label><br>
+            <input type="checkbox" id="service5" name="service5" value="Hand Therapy">
+            <label for="service5"> Hand Therapy</label><br>
+            <input type="checkbox" id="service6" name="service6" value="MusculoskeletalTherapy">
+            <label for="service6"> Musculoskeletal Therapy</label><br><br>
+            <input type="submit" value="Submit">
+            </form>
+            
+            
+        </div>
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+</div>
+<!-- here we input our javascript helper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
