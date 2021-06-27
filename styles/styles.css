@@ -46,6 +46,8 @@ p{
     margin-right: 0px;
     margin-left: 0px;
     background-color: #B0E0E6;
+    border-style: solid;
+    border-width: 2px;
     border-color: #4169E1;
 }
 
