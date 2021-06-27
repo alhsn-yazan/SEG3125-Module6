@@ -74,3 +74,9 @@ p{
   padding: 7px 0;
   font-size: 24px;
 }
+
+.footer {
+  padding: 10px;
+  text-align: left;
+  background: #B0E0E6;
+}
