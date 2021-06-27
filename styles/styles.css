@@ -68,3 +68,9 @@ p{
     display: flex;
     padding: 6px;
 }
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
